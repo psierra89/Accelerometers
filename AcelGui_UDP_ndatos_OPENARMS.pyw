@@ -217,7 +217,7 @@ class ListenerThread(threading.Thread):
         sock.bind(('', self.port))
         table = 'accelerometers_data'
         if self.save_to_file:
-            filepath = 'C:\\Users\\pablo\\Documents\\Girona\\OPENARMS\\'
+            filepath = './'
             filename = self.project + '-' + self.name + '-' + str(int(time.time())) + '.csv'
             file = open(filepath + filename, 'a+')
             print(filepath + filename)
